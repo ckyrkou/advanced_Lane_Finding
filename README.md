@@ -15,4 +15,5 @@ The developed algorithmic pipeline is capable of tracking the lines and finding 
 To run the demo just use
 
 Run python3 P4.py 0 to process video
+
 Run python3 P4.py 1 to process images
