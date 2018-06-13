@@ -218,8 +218,8 @@ def lane_histogram_detection(warped_image,left,right):
     out_img = np.dstack((warped_image, warped_image, warped_image))
     lines = np.dstack((warped_image, warped_image, warped_image))
 
-    histogram = np.sum(warped_image[warped_image.shape[0]/2:,:], axis=0)
-
+    histogram = np.sum(warped_image[int(warped_image.shape[0]/2):,:], axis=0)
+    
     # Find the peak of the left and right halves of the histogram
     # These will be the starting point for the left and right lines
     midpoint = np.int(histogram.shape[0]/2)
